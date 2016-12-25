@@ -1,0 +1,12 @@
+﻿@using AspNetCore_ViewComponent.Models
+@model List<Duyuru>
+
+@foreach (var item in Model)
+{
+    <div>
+        <p>
+            <h4>@item.Baslik</h4>
+            @item.Aciklama
+        </p>
+    </div>
+}
